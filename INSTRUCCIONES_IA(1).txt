@@ -1,0 +1,80 @@
+==========================================================
+  CONVERTIDOR IA - INSTRUCCIONES DE INSTALACIÓN
+==========================================================
+
+PASO 1 - Instalá las dependencias
+----------------------------------------------------------
+Abrí el CMD y ejecutá estos comandos uno por uno:
+
+  pip install pillow
+  pip install google-genai
+  pip install pandas openpyxl
+  pip install reportlab
+  pip install pymupdf
+  pip install python-docx
+  pip install pyinstaller
+
+
+PASO 2 - Pegá tu API key en el script
+----------------------------------------------------------
+Abrí CONVERTIDOR_IA.py con el Bloc de Notas.
+Buscá la línea:
+
+  GEMINI_API_KEY = "PEGA-TU-API-KEY-ACÁ"
+
+Reemplazá PEGA-TU-API-KEY-ACÁ por tu API key real.
+Guardá el archivo.
+
+
+PASO 3 - Creá el .exe
+----------------------------------------------------------
+En el CMD, navegá a la carpeta donde está el script:
+
+  cd C:\Users\totob\Desktop
+
+Ejecutá:
+
+  pyinstaller --onefile --windowed --name "Convertidor IA" CONVERTIDOR_IA.py
+
+Esperá unos minutos. El .exe va a estar en:
+
+  C:\Users\totob\Desktop\dist\Convertidor IA.exe
+
+
+PASO 4 - Creá el instalador con Inno Setup
+----------------------------------------------------------
+1. Descargá Inno Setup gratis:
+   https://jrsoftware.org/isdl.php
+
+2. Instalalo y abrilo
+
+3. Elegí "Create a new script file using the Script Wizard"
+
+4. Completá el wizard:
+   - Application name: Convertidor IA
+   - Application version: 1.0
+   - Application executable: seleccioná el .exe de la carpeta "dist"
+   - Output folder: elegí tu Desktop
+   - Language: Spanish
+   - Application file type extension: (dejalo vacío)
+
+5. Al final hacé click en COMPILE (ícono del martillo)
+
+6. Te genera: Setup_Convertidor_IA.exe
+
+¡Listo! Ese Setup.exe se lo mandás a quien quieras.
+Al ejecutarlo instala el programa como cualquier app
+de Windows, con acceso directo en el escritorio.
+
+==========================================================
+FUNCIONES DEL PROGRAMA
+==========================================================
+
+✅ Múltiples archivos a la vez (seleccioná varios juntos)
+✅ Arrastrá archivos directamente a la ventana
+✅ Exportar a: Excel, PDF, Word, Imágenes PNG
+✅ Recibe: PDF, Imágenes, Excel, Word
+✅ Se guarda automáticamente en tu carpeta Descargas
+✅ Usa Google Gemini IA para máxima precisión en OCR
+
+==========================================================
