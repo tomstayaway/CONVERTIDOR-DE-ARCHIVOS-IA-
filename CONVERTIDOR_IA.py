@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageTk
 
 # ── API KEY FIJA ───────────────────────────────────────────────────────────────
-GEMINI_API_KEY = "AIzaSyDoJEvg6kLxpQa-knUIIvD7cD6Ljc9FwFc"
+GEMINI_API_KEY = " PUT HERE YOUR API KEY "
 # ──────────────────────────────────────────────────────────────────────────────
 
 DOWNLOADS = str(Path.home() / "Downloads")
